@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>IMC</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Peso (Kg)</ion-label>
+      <ion-input type="text" [(ngModel)]="peso"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Altura (cm)</ion-label>
+      <ion-input type="text" [(ngModel)]="altura"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block (click)="handlerButtonClick()">Calcular</button>
+  </div>
+</ion-content>
